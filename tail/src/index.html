@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montessoriförskolan Solen</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .sticky-button {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+        }
+        .sticky-button.show {
+            opacity: 1;
+        }
+        .sticky-logo {
+            position: fixed;
+            top: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: opacity 0.3s ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+    <header class="bg-white text-center py-8">
+        <div id="logo" class="fixed top-4 left-4 transition-opacity duration-300">
+            <img src="img/sol.png" alt="Logo" class="w-16 h-16">
+        </div>        
+        <h1 class="text-4xl font-bold text-gray-800 mt-24">Välkommen till</h1>
+        <h1 class="text-4xl font-bold text-gray-800">Montessoriförskolan Solen</h1>
+        <p class="mt-4 text-lg text-gray-600">Centralt belägen i Kristianstad med närhet till natur och parker</p>
+        <div class="flex flex-wrap justify-center mt-6">
+            <a href="form.html" class="block bg-blue-500 text-white py-2 px-4 rounded mb-2">Intresseanmälan</a>
+            <button id="topButton" class="sticky-button bg-blue-500 text-white px-4 py-2 rounded">Intresseanmälan</button>
+            <script>
+                const topButton = document.getElementById('topButton');
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 400) {
+                        topButton.classList.add('show');
+                    } else {
+                        topButton.classList.remove('show');
+                    }
+                });
+            </script>
+            <script>
+                const logo = document.getElementById('logo');
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 100) {
+                        logo.classList.add('show');
+                    } else {
+                        logo.classList.remove('show');
+                    }
+                });
+            </script>
+        </div>
+    </header>
+
+    <section class="text-center py-12 bg-gray-50">
+        <h2 class="text-3xl font-bold text-gray-800 mb-4">Välkommen till oss!</h2>
+        <p class="text-lg text-gray-600 mb-8">Solens montessoriförskola är belägen i centrala Kristianstad med närhet till sköna naturområden.</p>
+        <p class="text-lg text-gray-600 mb-8">Intill förskolan finns gott om parkeringsplatser och en busshållplats.</p>
+        <p class="text-lg text-gray-600 mb-8">Vi är granne med Sommarlustparken och har fem minuters promenad till skogen i Björket.</p>
+        <!-- <div class="flex flex-col items-center">
+            <img src="img/agare.jpg" alt="Jaklina Stankic" class="w-64 h-64 rounded-full mb-4">
+            <p class="text-xl font-bold text-gray-800">Jaklina Stankic</p>
+            <p class="text-gray-600">Rektor</p>
+            <a href="#" class="mt-4 bg-blue-500 text-white py-2 px-4 rounded">Läs Mer Om Skolan</a>
+        </div> -->
+    </section>
+
+    <section class="text-center py-12 bg-white">
+        <body class="bg-gray-100 p-4 sm:p-8">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-2xl sm:text-3xl font-bold text-center mb-6">Verksamhet</h1>
+                
+                <!-- First Section -->
+                <div class="flex flex-col md:flex-row mb-8">
+                    <div class="md:w-2/3 md:pr-8">
+                        <p class="text-gray-700 mb-4">
+                            På förskolan finns det 70 platser med fyra avdelningar, Karlavagnen 3-5 år, Orion 3-5 år, Cassiopeja 1-3 år samt Pegasus 1-3 år.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Varje dag har vi utevistelse. Vi tycker det är viktigt ur många aspekter att barnen kommer ut en stund varje dag. Utemiljön ska stimulera barnets alla sinnen med hjälp av växter i olika färger, former och dofter.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            Vi har bärbuskar och fruktträd där barnen får olika smakupplevelser. Barnet har möjlighet till olika grovmotoriska aktiviteter vid ex cykelbanan, hinderbanan och rutschkanan.
+                        </p>
+                    </div>
+                    <div class="md:w-1/3 mt-4 md:mt-0">
+                        <img src="img/gard.jpg" alt="Playground" class="w-full rounded-lg shadow-md">
+                    </div>
+                </div>
+        
+                <!-- Second Section -->
+                <div class="flex flex-col md:flex-row-reverse mb-8">
+                    <div class="md:w-2/3 md:pl-8">
+                        <h2 class="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">Närproducerad mat</h2>
+                        <p class="text-gray-700 mb-4">
+                            Vi har eget kök med egen kock. Vi lägger stor vikt på att maten ska vara närproducerad.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            För att få specialkost av medicinska skäl krävs intyg från läkare.
+                        </p>
+                    </div>
+                    <div class="md:w-1/3 mt-4 md:mt-0">
+                        <img src="img/sallad.jpg" alt="Chef" class="w-full rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+        </body>
+        <!-- <h2 class="text-3xl font-bold text-gray-800 mb-4">VERKLIGHETEN - Din framtid</h2>
+        <p class="text-lg text-gray-600 mb-8">På JENSEN tränas du för verkligheten utanför skolan. Med en helhetssyn på din utveckling förbereder vi dig för nästa steg!</p>
+        
+        <div class="flex flex-wrap justify-center">
+            <img src="img/gard.jpg" alt="Image 1" class="w-1/3 h-auto rounded mb-4">
+            <img src="img/mariamontessori.jpg" alt="Image 2" class="w-1/3 h-auto rounded mb-4">
+            <img src="img/sallad.jpg" alt="Image 3" class="w-1/3 h-auto rounded mb-4">
+        </div> -->
+    </section>
+
+    <section class="text-center py-12 bg-gray-50">
+        <div class="max-w-lg mx-auto">
+            <h1 class="text-2xl font-bold mb-4">Fem mål med montessoripedagogiken</h1>
+            <ol class="list-decimal list-inside space-y-4">
+                <li class="flex items-start">
+                    <span class="flex-shrink-0 bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">1</span>
+                    <span class="text-gray-700">Det är viktigare att hitta det bästa inom sig själv än att vara bäst jämfört med andra.</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="flex-shrink-0 bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">2</span>
+                    <span class="text-gray-700">Varje barn ska ha hjälp med att hitta sina egna förutsättningar och utveckla dem.</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="flex-shrink-0 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">3</span>
+                    <span class="text-gray-700">Vi värdesätter aldrig en sorts begåvning framför en annan.</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="flex-shrink-0 bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">4</span>
+                    <span class="text-gray-700">Barn ska slippa inbördes konkurrens och prestationsjakt. Istället får de uppleva glädjen i att använda sina resurser på bästa sätt.</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="flex-shrink-0 bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4">5</span>
+                    <span class="text-gray-700">En sund känsla för eget värde och självtillit ska grundläggas redan i tidiga år.</span>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold mb-4">Följ oss på våra sociala medier</h3>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.instagram.com/montessoriforskolansolen/" class="text-gray-400 hover:text-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:montessorisol@gmail.com" class="text-gray-400 hover:text-white">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+            <p class="text-gray-400">2024 Montessoriförskolan Solen Kristianstad.</p>
+            <p class="text-gray-400">Kanalgatan 94 B 291 41 Kristianstad</p>
+            <p class="text-gray-400">044-801 95</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+ORG
+Montessoriförskolan Solen leds och ägs av Lena Lundström & Magdalena Wattwil
+
+Öppetider
+Titta hemsida
+
+Intresseanmälan som är
