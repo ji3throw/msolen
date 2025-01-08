@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platsanmälan</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="p-4 min-h-screen">
+        <section class="text-center py-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Aktuella bilder</h2></p>
+        </section>
+        
+        <div id="default-carousel" class="relative w-full max-w-7xl mx-auto" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative overflow-hidden rounded-lg" style="height: 70vh;">
+                <!-- Item 0 -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20" data-carousel-item="active">
+                    <img src="img/slideshow/walking.jpg" class="absolute block w-full h-full object-cover" alt="Walking">
+                </div>
+                <!-- Item 1 -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item>
+                    <img src="img/slideshow/basket.jpg" class="absolute block w-full h-full object-cover" alt="Basket">
+                </div>
+                <!-- Item 2 -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item>
+                    <img src="img/slideshow/bench.jpg" class="absolute block w-full h-full object-cover" alt="Bench">
+                </div>
+                <!-- Item 3 -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item>
+                    <img src="img/slideshow/bubbles.jpg" class="absolute block w-full h-full object-cover" alt="Bubbles">
+                </div>
+                <!-- Item 4 -->
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item>
+                    <img src="img/slideshow/inside.jpg" class="absolute block w-full h-full object-cover" alt="Inside">
+                </div>
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item>
+                    <img src="img/slideshow/leaves.jpg" class="absolute block w-full h-full object-cover" alt="Inside">
+                </div>
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item>
+                    <img src="img/slideshow/leksaker.jpg" class="absolute block w-full h-full object-cover" alt="Inside">
+                </div>
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item>
+                    <img src="img/slideshow/parking.jpg" class="absolute block w-full h-full object-cover" alt="Inside">
+                </div>
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item>
+                    <img src="img/slideshow/path.jpg" class="absolute block w-full h-full object-cover" alt="Inside">
+                </div>
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item>
+                    <img src="img/slideshow/snails.jpg" class="absolute block w-full h-full object-cover" alt="Inside">
+                </div>
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item>
+                    <img src="img/slideshow/swings.jpg" class="absolute block w-full h-full object-cover" alt="Inside">
+                </div>
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item>
+                    <img src="img/slideshow/tire.jpg" class="absolute block w-full h-full object-cover" alt="Inside">
+                </div>
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item>
+                    <img src="img/slideshow/tires.jpg" class="absolute block w-full h-full object-cover" alt="Inside">
+                </div>
+                <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10" data-carousel-item>
+                    <img src="img/slideshow/water.jpg" class="absolute block w-full h-full object-cover" alt="Inside">
+                </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-bold mb-4">Följ oss på våra sociala medier</h3>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.instagram.com/montessoriforskolansolen/" class="text-gray-400 hover:text-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:montessorisol@gmail.com" class="text-gray-400 hover:text-white">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+            </div>
+            <p class="text-gray-400">2024 Montessoriförskolan Solen Kristianstad.</p>
+            <p class="text-gray-400">Kanalgatan 94 B 291 41 Kristianstad</p>
+            <p class="text-gray-400">044-801 95</p>
+        </div>
+    </footer>
+</body>
+</html>
